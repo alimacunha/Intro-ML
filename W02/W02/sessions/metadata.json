@@ -1,0 +1,66 @@
+{
+  "amli": {
+    "gender": "F",
+    "age": 29,
+    "glasses": "no",
+    "trials": {
+      "0": {
+        "trial_folder": "sessions\\amli\\20251011_T0",
+        "timestamp": "2025-10-11 13:59:58",
+        "patterns": {}
+      },
+      "1": {
+        "trial_folder": "sessions\\amli\\20251011_T1",
+        "timestamp": "2025-10-11 14:02:16",
+        "patterns": {
+          "grid": {
+            "event_log": "sessions\\amli\\20251011_T1\\grid\\event_log.csv",
+            "fixation_coords": "sessions\\amli\\20251011_T1\\grid\\fixation_coords.csv",
+            "frames_dir": "sessions\\amli\\20251011_T1\\grid\\frames"
+          },
+          "circle": {
+            "event_log": "sessions\\amli\\20251011_T1\\circle\\event_log.csv",
+            "fixation_coords": "sessions\\amli\\20251011_T1\\circle\\fixation_coords.csv",
+            "frames_dir": "sessions\\amli\\20251011_T1\\circle\\frames"
+          },
+          "line": {
+            "event_log": "sessions\\amli\\20251011_T1\\line\\event_log.csv",
+            "fixation_coords": "sessions\\amli\\20251011_T1\\line\\fixation_coords.csv",
+            "frames_dir": "sessions\\amli\\20251011_T1\\line\\frames"
+          },
+          "random": {
+            "event_log": "sessions\\amli\\20251011_T1\\random\\event_log.csv",
+            "fixation_coords": "sessions\\amli\\20251011_T1\\random\\fixation_coords.csv",
+            "frames_dir": "sessions\\amli\\20251011_T1\\random\\frames"
+          }
+        }
+      },
+      "2": {
+        "trial_folder": "sessions\\amli\\20251011_T2",
+        "timestamp": "2025-10-11 14:09:26",
+        "patterns": {
+          "grid": {
+            "event_log": "sessions\\amli\\20251011_T2\\grid\\event_log.csv",
+            "fixation_coords": "sessions\\amli\\20251011_T2\\grid\\fixation_coords.csv",
+            "frames_dir": "sessions\\amli\\20251011_T2\\grid\\frames"
+          },
+          "circle": {
+            "event_log": "sessions\\amli\\20251011_T2\\circle\\event_log.csv",
+            "fixation_coords": "sessions\\amli\\20251011_T2\\circle\\fixation_coords.csv",
+            "frames_dir": "sessions\\amli\\20251011_T2\\circle\\frames"
+          },
+          "line": {
+            "event_log": "sessions\\amli\\20251011_T2\\line\\event_log.csv",
+            "fixation_coords": "sessions\\amli\\20251011_T2\\line\\fixation_coords.csv",
+            "frames_dir": "sessions\\amli\\20251011_T2\\line\\frames"
+          },
+          "random": {
+            "event_log": "sessions\\amli\\20251011_T2\\random\\event_log.csv",
+            "fixation_coords": "sessions\\amli\\20251011_T2\\random\\fixation_coords.csv",
+            "frames_dir": "sessions\\amli\\20251011_T2\\random\\frames"
+          }
+        }
+      }
+    }
+  }
+}

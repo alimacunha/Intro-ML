@@ -22,7 +22,8 @@ def load_csv(test_subject, trial, folder, file):
         data (pd.DataFrame): The loaded CSV file as a pandas DataFrame.
     """
 
-    file_path = os.path.abspath(f'../W02/sessions/{test_subject}/{trial}/{folder}/{file}.csv')
+    file_path = 'C:/Users/amand/OneDrive/ITU/AUTUMN 2025/Intro to Machine Learning/01 Exercises/Intro-ML/W02/W02/sessions/test_subject_0/gaze/0/normalized_pupils.csv'
+    
     data = pd.read_csv(file_path)
     
     return data
@@ -40,10 +41,13 @@ def load_csv_0(test_subject, folder, filename):
     Returns:
         data (pd.DataFrame): The loaded CSV file as a pandas DataFrame.
     """
-    file_path = os.path.join(os.path.relpath(f'../W02/sessions/test_subject_0/gaze/' + folder), f'{filename}.csv')#f'data/test_subjects/{test_subject}/gaze/' + folder), f'{filename}.csv')
-
-    data = pd.read_csv(file_path)
+    base_dir = 'C:/Users/amand/OneDrive/ITU/AUTUMN 2025/Intro to Machine Learning/01 Exercises/Intro-ML/W02/W02/sessions'
+    file_path = os.path.join(base_dir, test_subject, 'gaze', folder, f'{filename}.csv')
     
+    if not os.path.exists(file_path):
+        raise FileNotFoundError(f"CSV file not found at: {file_path}")
+    
+    data = pd.read_csv(file_path)
     return data
 
 def create_pupil_data(json_input):
@@ -433,7 +437,7 @@ def gen_data_subject_0():
         pupils = create_pupil_data(load_csv_0('test_subject_0', str(f), 'pupils'))
         positions_n= create_position_data(load_csv_0('test_subject_0', str(f), 'normalized_screen_coordinates'))
         positions= create_position_data(load_csv_0('test_subject_0', str(f), 'positions'))
-        images = [open_img(os.path.abspath(f'data/test_subjects/test_subject_0/gaze/{f}'), i) for i in range(len(positions)-1)]
+        images = [open_img(os.path.abspath(f'C:/Users/amand/OneDrive/ITU/AUTUMN 2025/Intro to Machine Learning/01 Exercises/Intro-ML/W02/W02/sessions/test_subject_0/gaze/{f}'), i) for i in range(len(positions)-1)]
         D.append({
             "pupils_n_train": pupils_n[:9],
             "pupils_n_test": pupils_n[9:],
